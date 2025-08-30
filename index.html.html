@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GANAMOS.NET — WhatsApp</title>
+    <meta name="description" content="Recibí tu bono de bienvenida y escribinos por WhatsApp para más beneficios." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <style>
+      :root { --bg:#0a0a0f; --text:#e5e7eb; --muted:#a3a3a3; --whatsapp:#25D366; --card: rgba(255,255,255,.08); --border: rgba(255,255,255,.12); }
+      *{box-sizing:border-box}
+      html,body{height:100%}
+      body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;color:var(--text);background:var(--bg)}
+
+      .backdrop{position:fixed;inset:0;z-index:-1;}
+      .backdrop:before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1541537103745-ea3429c65dc5?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;filter:saturate(1.1) brightness(.8);} 
+      .backdrop:after{content:'';position:absolute;inset:0;background:radial-gradient(1200px 800px at 50% 10%, rgba(124,58,237,.35), transparent 60%),linear-gradient(180deg, rgba(10,10,15,.35), rgba(10,10,15,.85));}
+
+      .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:8vh 6vw}
+
+      .card{max-width:760px;width:100%;padding:36px 28px;border-radius:28px;background:var(--card);backdrop-filter:saturate(1.2) blur(8px);border:1px solid var(--border);box-shadow:0 25px 60px rgba(0,0,0,.55);text-align:center}
+      .brand{font-weight:900;letter-spacing:1px;font-size:clamp(32px,6vw,56px);margin:0 0 14px;text-transform:uppercase}
+      .brand span{background:linear-gradient(90deg,#fff,#d1d5db);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+      .headline{margin:0 auto 18px;max-width:28ch;font-weight:900;font-size:clamp(22px,4.5vw,36px);line-height:1.15;background:linear-gradient(90deg,#ff00ea,#b517ff,#00d9ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+      .bonus{margin:0 auto 16px;max-width:34ch;font-size:clamp(18px,3.6vw,22px);font-weight:700;color:#e2e8f0}
+      .details{margin:0 auto 14px;max-width:38ch;font-size:16px;color:#cbd5e1;line-height:1.5}
+
+      .cta{margin-top:24px}
+      .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;text-decoration:none;font-weight:800;letter-spacing:.2px;background:var(--whatsapp);color:#0a0a0f;box-shadow:0 12px 30px rgba(37,211,102,.45);transition:transform .15s ease, box-shadow .15s ease}
+      .btn:hover{transform:translateY(-1px);box-shadow:0 16px 36px rgba(37,211,102,.55)}
+      .btn svg{width:18px;height:18px}
+
+      .fine{margin-top:20px;font-size:13px;color:var(--muted)}
+    </style>
+  </head>
+  <body>
+    <div class="backdrop" aria-hidden="true"></div>
+    <div class="wrap">
+      <section class="card" role="main" aria-label="Landing contacto por WhatsApp">
+        <h1 class="brand"><span>GANAMOS.NET</span></h1>
+        <p class="headline">BONO DEL 30% HASTA $5.000</p>
+        <p class="bonus">🎁 Disponible en tu primera carga 🎁</p>
+        <p class="details">✔ Retiro disponible cada 24 horas.<br/>✔ Consultá por más bonos directamente en WhatsApp.<br/>✔ Promoción exclusiva para usuarios nuevos.</p>
+        <div class="cta">
+          <a class="btn" href="https://wa.me/5492233448112?text=Hola%20quiero%20mi%20bono%20%F0%9F%91%8B" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+            <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M19.11 17.41c-.29-.15-1.67-.82-1.93-.91-.26-.1-.45-.15-.64.15-.19.29-.74.91-.91 1.1-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.33-1.44-.86-.76-1.44-1.69-1.61-1.98-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.15-.17.19-.29.29-.48.1-.19.05-.37-.02-.51-.07-.15-.64-1.55-.88-2.12-.23-.56-.47-.49-.64-.49h-.55c-.19 0-.5.07-.76.37-.26.29-1 1-1 2.44 0 1.44 1.02 2.84 1.16 3.03.15.19 2.01 3.07 4.86 4.31.68.29 1.21.46 1.63.59.69.22 1.32.19 1.82.12.56-.08 1.67-.68 1.9-1.34.24-.66.24-1.22.17-1.34-.06-.12-.24-.19-.53-.34z"/><path d="M26.88 5.12C24.02 2.26 20.2.75 16.18.75S8.34 2.26 5.48 5.12A15.39 15.39 0 0 0 .75 16.18c0 2.69.69 5.34 2 7.67L1.06 31.25l7.58-1.92a15.48 15.48 0 0 0 7.54 1.95h.01c8.42 0 15.26-6.85 15.26-15.26 0-4.02-1.57-7.84-4.53-10.69zM16.2 28.5h-.01a12.31 12.31 0 0 1-6.28-1.72l-.45-.27-4.5 1.14 1.2-4.38-.29-.45a12.3 12.3 0 0 1-1.9-6.55c0-6.8 5.53-12.33 12.33-12.33 3.3 0 6.4 1.28 8.73 3.61a12.22 12.22 0 0 1 3.61 8.73c-.01 6.8-5.54 12.32-12.34 12.32z"/></svg>
+            Pedir mi bono en WhatsApp
+          </a>
+        </div>
+        <p class="fine">⚠️ +18 · Juego Responsable · 1 retiro cada 24 hs · Promoción sujeta a TyC</p>
+      </section>
+    </div>
+  </body>
+</html>
